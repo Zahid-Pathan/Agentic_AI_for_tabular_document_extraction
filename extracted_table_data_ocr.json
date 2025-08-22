@@ -1,0 +1,10 @@
+{
+  "extraction_metadata": {
+    "pdf_path": "data/pdf5_png.pdf",
+    "extraction_timestamp": "2025-08-21T00:00:00Z",
+    "framework_version": "1.0.0-OCR",
+    "total_tables_found": 0,
+    "ocr_enabled": true
+  },
+  "tables": []
+}
