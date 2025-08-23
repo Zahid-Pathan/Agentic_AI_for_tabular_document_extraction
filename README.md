@@ -5,7 +5,7 @@ Very brief docs for quick use and orientation.
 ## What this does
 - Orchestrates PDF → (fallback) OCR → **finalize** via a small workflow graph; keeps **only values + headers** in the final JSON. 
 
-![alt text](image.png)
+<img width="4210" height="1200" alt="image" src="https://github.com/user-attachments/assets/be955bb5-742a-45ef-90d0-2daa8a65a9cf" />
 
 ## Quick start
 ```python
