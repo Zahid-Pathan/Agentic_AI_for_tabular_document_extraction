@@ -491,7 +491,7 @@ logger = logging.getLogger(__name__)
 class MasterState(TypedDict):
     """Master state for the entire extraction workflow"""
     pdf_path: str
-    extraction_method: Optional[str]  # 'pdfplumber' or 'ocr'
+    extraction_method: Optional[str]  # 'pdfplumber' or 'ocr' depending on input
     raw_extraction_result: Optional[Dict]
     final_json: Optional[Dict]
     error_messages: Annotated[List[str], operator.add]
@@ -499,7 +499,7 @@ class MasterState(TypedDict):
     agent_recommendations: List[str]
 
 class MasterAgent:
-    """Master Agent that coordinates PDF and (optionally) OCR extraction (no LLMs)."""
+    """Master Agent that coordinates PDF and (optionally) OCR extraction (no LLMs used)."""
 
     def __init__(self):
         self.pdf_agent = PDFAgent()
@@ -805,7 +805,7 @@ def main():
         master = MasterAgent()
         results = master.extract_tables(pdf_path)
 
-        output_file = "claude_new/multi_agent_extraction_results.json"
+        output_file = "results/multi_agent_extraction_results.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
 
