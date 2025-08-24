@@ -4,7 +4,8 @@
 
 This system extracts tables from PDF documents using a multi-agent architecture powered by Hugging Face LLMs and LangGraph orchestration. The workflow intelligently combines PDF parsing, OCR fallback, and LLM-powered decision making.
 
-<img width="795" height="466" alt="image" src="https://github.com/user-attachments/assets/926096e9-96ea-4b27-8e54-51c1e2ba7f16" />
+<img width="2076" height="1086" alt="image" src="https://github.com/user-attachments/assets/5df8a07b-8bf1-46da-a29f-95fe8e53debb" />
+
 
 
 
