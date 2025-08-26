@@ -204,11 +204,10 @@ pip install transformers torch langchain-huggingface accelerate langgraph
 - **Export format options (CSV, Excel, etc.)**
 - **Web interface integration**
 
-<<<<<<< HEAD
 
 ## Notes & credits
 - **LangGraph PDF agent** was self-built/custom implemented.
 - **OCR** complex functions and error handling were implemented with help from **Claude AI**.
 - **Extensible fallback**: if both the PDF extractor and OCR fail, add another node in the LangGraph using a **vision model** (e.g., **LLaVA** or **GPT‑4o**) as a final attempt.
-=======
->>>>>>> refs/remotes/origin/main
+
+
