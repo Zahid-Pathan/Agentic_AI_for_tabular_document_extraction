@@ -4,7 +4,10 @@
 
 This system extracts tables from PDF documents using a multi-agent architecture powered by Hugging Face LLMs and LangGraph orchestration. The workflow intelligently combines PDF parsing, OCR fallback, and LLM-powered decision making.
 
-![alt text](image.png)
+<img width="2076" height="1086" alt="image" src="https://github.com/user-attachments/assets/5df8a07b-8bf1-46da-a29f-95fe8e53debb" />
+
+
+
 
 ## Architecture Components
 
@@ -201,7 +204,11 @@ pip install transformers torch langchain-huggingface accelerate langgraph
 - **Export format options (CSV, Excel, etc.)**
 - **Web interface integration**
 
+<<<<<<< HEAD
+
 ## Notes & credits
 - **LangGraph PDF agent** was self-built/custom implemented.
 - **OCR** complex functions and error handling were implemented with help from **Claude AI**.
 - **Extensible fallback**: if both the PDF extractor and OCR fail, add another node in the LangGraph using a **vision model** (e.g., **LLaVA** or **GPT‑4o**) as a final attempt.
+=======
+>>>>>>> refs/remotes/origin/main
