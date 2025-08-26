@@ -671,25 +671,3 @@ class OCRAgent:
             "overall_confidence": 0.0,
             "tables": []
         }
-
-
-# For testing and backward compatibility
-def test_enhanced_ocr_agent():
-    """Test the enhanced OCR agent"""
-    print("🧪 Testing Enhanced OCR Agent (Compatible with main_agent.py)")
-    
-    agent = OCRAgent()
-    
-    print(f"✅ Agent: {agent.agent_name}")
-    print(f"🔍 OCR Available: {agent.ocr_available}")
-    print("🔄 Drop-in replacement for original OCR agent")
-    print("✨ Enhanced character recognition for better accuracy")
-    
-    return agent
-
-
-if __name__ == "__main__":
-    agent = test_enhanced_ocr_agent()
-    print("\n✅ Enhanced OCR Agent ready!")
-    print("🚀 Improved character recognition")
-    print("🔄 Fully compatible with main_agent.py")

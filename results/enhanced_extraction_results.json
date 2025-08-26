@@ -1,567 +1,726 @@
 {
   "master_agent_metadata": {
-    "extraction_method_used": "pdfplumber",
+    "extraction_method_used": "ocr",
     "workflow_completed": true,
     "llm_powered": true,
     "total_agents_involved": 3,
-    "final_confidence": 0.8412698412698413
+    "final_confidence": 0.7671285714285714
   },
   "llm_analysis": {
-    "analysis": "Analyze this table extraction result:\n            - Method: pdfplumber\n            - Tables found: 1\n            - Confidence: 0.84\n            - PDF: data/pdf3.pdf\n            \n            Provide analysis and next step recommendation.",
+    "analysis": "Analyze this table extraction result:\n            - Method: enhanced_ocr\n            - Tables found: 1\n            - Confidence: 0.77\n            - PDF: data/example.pdf\n            \n            Provide analysis and next step recommendation.",
     "decision_reasoning": "PROCEED: Acceptable extraction quality",
-    "summary": "Create a concise summary for this table extraction:\n                    - Tables found: 1\n                    - Data values extracted: 43\n                    - Method: pdfplumber\n                    - Success: Yes\n                    \n                    Summary:"
+    "summary": "Create a concise summary for this table extraction:\n                    - Tables found: 1\n                    - Data values extracted: 53\n                    - Method: ocr\n                    - Success: Yes\n                    \n                    Summary:"
   },
   "extracted_values": [
     {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 1,
-      "column_index": 1,
-      "value": "Grouped1",
-      "row_headers": [
-        "N1"
-      ],
-      "column_headers": [
-        "Category"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 2,
       "column_index": 1,
-      "value": "Sub.Item.A",
-      "row_headers": [],
+      "value": "a",
+      "row_headers": [
+        "Coll"
+      ],
       "column_headers": [
-        "Category"
+        "Title"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 2,
       "column_index": 2,
-      "value": "12.50",
-      "row_headers": [],
+      "value": "Col2A",
+      "row_headers": [
+        "Coll"
+      ],
       "column_headers": [
-        "Col1"
+        "Col2"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 2,
       "column_index": 3,
-      "value": "22.30",
-      "row_headers": [],
+      "value": "Col2B",
+      "row_headers": [
+        "Coll"
+      ],
       "column_headers": [
-        "Col2A"
+        "Col4"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 2,
       "column_index": 4,
-      "value": "115.00",
-      "row_headers": [],
-      "column_headers": [
-        "Col2B"
-      ]
+      "value": "Col2A",
+      "row_headers": [
+        "Coll"
+      ],
+      "column_headers": []
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 2,
       "column_index": 5,
-      "value": "48.00",
-      "row_headers": [],
-      "column_headers": [
-        "Col3A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 2,
-      "column_index": 6,
-      "value": "53.00",
-      "row_headers": [],
-      "column_headers": [
-        "Col3B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 3,
-      "column_index": 1,
-      "value": "Sub.Item.B",
-      "row_headers": [],
-      "column_headers": [
-        "Category"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 3,
-      "column_index": 2,
-      "value": "14.00",
-      "row_headers": [],
-      "column_headers": [
-        "Col1"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 3,
-      "column_index": 3,
-      "value": "23.50",
-      "row_headers": [],
-      "column_headers": [
-        "Col2A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 3,
-      "column_index": 4,
-      "value": "125.00",
-      "row_headers": [],
-      "column_headers": [
-        "Col2B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 3,
-      "column_index": 5,
-      "value": "47.50",
-      "row_headers": [],
-      "column_headers": [
-        "Col3A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 3,
-      "column_index": 6,
-      "value": "54.20",
-      "row_headers": [],
-      "column_headers": [
-        "Col3B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 4,
-      "column_index": 1,
-      "value": "Sub.Item.C",
-      "row_headers": [],
-      "column_headers": [
-        "Category"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 4,
-      "column_index": 2,
-      "value": "13.20",
-      "row_headers": [],
-      "column_headers": [
-        "Col1"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 4,
-      "column_index": 3,
-      "value": "21.80",
-      "row_headers": [],
-      "column_headers": [
-        "Col2A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 4,
-      "column_index": 4,
-      "value": "108.70",
-      "row_headers": [],
-      "column_headers": [
-        "Col2B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 4,
-      "column_index": 5,
-      "value": "49.10",
-      "row_headers": [],
-      "column_headers": [
-        "Col3A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 4,
-      "column_index": 6,
-      "value": "52.60",
-      "row_headers": [],
-      "column_headers": [
-        "Col3B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 5,
-      "column_index": 1,
-      "value": "Grouped2",
+      "value": "Col2B",
       "row_headers": [
-        "N2"
+        "Coll"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 3,
+      "column_index": 1,
+      "value": "title",
+      "row_headers": [
+        "Row"
       ],
       "column_headers": [
-        "Category"
+        "Title"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 3,
+      "column_index": 2,
+      "value": "Col4A",
+      "row_headers": [
+        "Row"
+      ],
+      "column_headers": [
+        "Col2"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 3,
+      "column_index": 3,
+      "value": "Col4B",
+      "row_headers": [
+        "Row"
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 4,
+      "column_index": 1,
+      "value": "Col3B",
+      "row_headers": [
+        "Col3A"
+      ],
+      "column_headers": [
+        "Title"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 5,
+      "column_index": 1,
+      "value": "AA",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Title"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 5,
       "column_index": 2,
-      "value": "11.00",
+      "value": "23.00",
       "row_headers": [
-        "N2"
+        "Row."
       ],
       "column_headers": [
-        "Col1"
+        "Col2"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
       "row_index": 5,
       "column_index": 3,
+      "value": "25.40",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 5,
+      "column_index": 4,
+      "value": "115.50",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 6,
+      "column_index": 1,
+      "value": "invisiple.Grid2",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Title"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 6,
+      "column_index": 2,
+      "value": "BB",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Col2"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 6,
+      "column_index": 3,
+      "value": "24.00",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 6,
+      "column_index": 4,
+      "value": "25.10",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 6,
+      "column_index": 5,
+      "value": "125.50",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 6,
+      "column_index": 6,
+      "value": "DD",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 7,
+      "column_index": 1,
+      "value": "invisiple.Grid3",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Title"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 7,
+      "column_index": 2,
+      "value": "cc",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Col2"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 7,
+      "column_index": 3,
+      "value": "26.00",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 7,
+      "column_index": 4,
+      "value": "25.20",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 7,
+      "column_index": 5,
+      "value": "105.50",
+      "row_headers": [
+        "Row."
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 8,
+      "column_index": 1,
+      "value": "00",
+      "row_headers": [
+        "50"
+      ],
+      "column_headers": [
+        "Title"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 8,
+      "column_index": 2,
+      "value": "24",
+      "row_headers": [
+        "50"
+      ],
+      "column_headers": [
+        "Col2"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 8,
+      "column_index": 3,
+      "value": "00",
+      "row_headers": [
+        "50"
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 9,
+      "column_index": 1,
       "value": "35.00",
       "row_headers": [
-        "N2"
+        "35.00"
       ],
       "column_headers": [
-        "Col2A"
+        "Title"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 5,
-      "column_index": 4,
-      "value": "35.00",
-      "row_headers": [
-        "N2"
-      ],
-      "column_headers": [
-        "Col2B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 5,
-      "column_index": 5,
-      "value": "78.00",
-      "row_headers": [
-        "N2"
-      ],
-      "column_headers": [
-        "Col3A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 5,
-      "column_index": 6,
-      "value": "61.00",
-      "row_headers": [
-        "N2"
-      ],
-      "column_headers": [
-        "Col3B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 6,
+      "row_index": 10,
       "column_index": 1,
-      "value": "Sub.Item.D",
-      "row_headers": [],
+      "value": "00",
+      "row_headers": [
+        "21"
+      ],
       "column_headers": [
-        "Category"
+        "Title"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 6,
+      "row_index": 10,
       "column_index": 2,
-      "value": "15.30",
-      "row_headers": [],
-      "column_headers": [
-        "Col1"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 6,
-      "column_index": 3,
       "value": "135.40",
-      "row_headers": [],
+      "row_headers": [
+        "21"
+      ],
       "column_headers": [
-        "Col2A"
+        "Col2"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 6,
+      "row_index": 10,
+      "column_index": 3,
+      "value": "135.",
+      "row_headers": [
+        "21"
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 10,
       "column_index": 4,
-      "value": "1580.20",
-      "row_headers": [],
-      "column_headers": [
-        "Col2B"
-      ]
+      "value": "135.40",
+      "row_headers": [
+        "21"
+      ],
+      "column_headers": []
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 6,
+      "row_index": 10,
       "column_index": 5,
-      "value": "79.00",
-      "row_headers": [],
-      "column_headers": [
-        "Col3A"
-      ]
+      "value": "1589.",
+      "row_headers": [
+        "21"
+      ],
+      "column_headers": []
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 6,
+      "row_index": 10,
       "column_index": 6,
-      "value": "58.50",
-      "row_headers": [],
-      "column_headers": [
-        "Col3B"
-      ]
+      "value": "589.10",
+      "row_headers": [
+        "21"
+      ],
+      "column_headers": []
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 7,
+      "row_index": 10,
+      "column_index": 7,
+      "value": "EE",
+      "row_headers": [
+        "21"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 11,
       "column_index": 1,
-      "value": "Grouped3",
+      "value": "00",
       "row_headers": [
-        "N3"
+        "30"
       ],
       "column_headers": [
-        "Category"
+        "Title"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 7,
+      "row_index": 11,
       "column_index": 2,
-      "value": "18.50",
+      "value": "59",
       "row_headers": [
-        "N3"
+        "30"
       ],
       "column_headers": [
-        "Col1"
+        "Col2"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 7,
+      "row_index": 11,
+      "column_index": 3,
+      "value": "00",
+      "row_headers": [
+        "30"
+      ],
+      "column_headers": [
+        "Col4"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 1,
+      "value": "25",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": [
+        "Title"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 2,
+      "value": "00",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": [
+        "Col2"
+      ]
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
       "column_index": 3,
       "value": "57.00",
       "row_headers": [
-        "N3"
+        "Meiged4"
       ],
       "column_headers": [
-        "Col2A"
+        "Col4"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 7,
+      "row_index": 12,
       "column_index": 4,
-      "value": "51.20",
+      "value": "31.00",
       "row_headers": [
-        "N3"
+        "Meiged4"
       ],
-      "column_headers": [
-        "Col2B"
-      ]
+      "column_headers": []
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 7,
+      "row_index": 12,
       "column_index": 5,
-      "value": "17.00",
+      "value": "37.00",
       "row_headers": [
-        "N3"
+        "Meiged4"
       ],
-      "column_headers": [
-        "Col3A"
-      ]
+      "column_headers": []
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 7,
+      "row_index": 12,
       "column_index": 6,
-      "value": "44.50",
+      "value": "31.00",
       "row_headers": [
-        "N3"
+        "Meiged4"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 7,
+      "value": "16",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 8,
+      "value": "00",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 9,
+      "value": "45",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 10,
+      "value": "00",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 12,
+      "column_index": 11,
+      "value": "FF",
+      "row_headers": [
+        "Meiged4"
+      ],
+      "column_headers": []
+    },
+    {
+      "table_id": "enhanced_ocr_table_1_0",
+      "page": 1,
+      "table_index": 0,
+      "row_index": 13,
+      "column_index": 1,
+      "value": "62.00",
+      "row_headers": [
+        "Merged5"
       ],
       "column_headers": [
-        "Col3B"
+        "Title"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 8,
-      "column_index": 1,
-      "value": "Sub.Item.E",
-      "row_headers": [],
-      "column_headers": [
-        "Category"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 8,
+      "row_index": 13,
       "column_index": 2,
-      "value": "19.60",
-      "row_headers": [],
+      "value": "19.00",
+      "row_headers": [
+        "Merged5"
+      ],
       "column_headers": [
-        "Col1"
+        "Col2"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 8,
+      "row_index": 13,
       "column_index": 3,
       "value": "62.00",
-      "row_headers": [],
+      "row_headers": [
+        "Merged5"
+      ],
       "column_headers": [
-        "Col2A"
+        "Col4"
       ]
     },
     {
-      "table_id": "pdf_table_1_0",
+      "table_id": "enhanced_ocr_table_1_0",
       "page": 1,
       "table_index": 0,
-      "row_index": 8,
+      "row_index": 13,
       "column_index": 4,
-      "value": "19.50",
-      "row_headers": [],
-      "column_headers": [
-        "Col2B"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 8,
-      "column_index": 5,
-      "value": "18.30",
-      "row_headers": [],
-      "column_headers": [
-        "Col3A"
-      ]
-    },
-    {
-      "table_id": "pdf_table_1_0",
-      "page": 1,
-      "table_index": 0,
-      "row_index": 8,
-      "column_index": 6,
-      "value": "46.20",
-      "row_headers": [],
-      "column_headers": [
-        "Col3B"
-      ]
+      "value": "19.00",
+      "row_headers": [
+        "Merged5"
+      ],
+      "column_headers": []
     }
   ],
   "agent_recommendations": [
     "Initialized with LLM-powered analysis"
   ],
   "conversation_log": [
-    "Starting table extraction for: data/pdf3.pdf",
-    "PDF extraction completed: 1 tables found with 0.84 confidence",
-    "LLM Analysis: Analyze this table extraction result:\n            - Method: pdfplumber\n            - Tables found: 1\n            - Confidence: 0.84\n            - PDF: data/pdf3.pdf\n            \n            Provide analysis and next step recommendation.",
+    "Starting table extraction for: data/example.pdf",
+    "PDF extraction completed: 0 tables found with 0.10 confidence",
+    "OCR extraction completed: 1 tables found with 0.77 confidence",
+    "LLM Analysis: Analyze this table extraction result:\n            - Method: enhanced_ocr\n            - Tables found: 1\n            - Confidence: 0.77\n            - PDF: data/example.pdf\n            \n            Provide analysis and next step recommendation.",
     "Decision: PROCEED: Acceptable extraction quality"
   ]
 }

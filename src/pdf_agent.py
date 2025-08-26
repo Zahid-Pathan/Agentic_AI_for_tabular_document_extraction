@@ -172,20 +172,7 @@ class PDFAgent:
             return min(0.95, avg_confidence)
         
         return 0.5
-    
-    def get_agent_info(self) -> Dict[str, str]:
-        """Return agent information"""
-        return {
-            "name": self.agent_name,
-            "specialization": "PDF table extraction using pdfplumber",
-            "input_format": "PDF files with vector-based tables",
-            "output_format": "Structured table data with metadata",
-            "confidence_range": "0.0 - 0.95"
-        }
 
-    # ==========================
-    # 🔻 NEW: Cell meta helpers
-    # ==========================
 
     def _build_cell_records(self, cleaned_table: List[List[str]]) -> (List[Dict[str, Any]], Dict[str, Any]):
         """
@@ -300,64 +287,4 @@ class PDFAgent:
             return True
         except Exception:
             return False
-
-    # -----------------------------
-    # 🔹 Public getters for a cell
-    # -----------------------------
-
-    def get_cell_value(self, table_info: Dict[str, Any], row_index: int, col_index: int) -> Optional[str]:
-        """
-        Return the raw cell value at (row_index, col_index) from table_info['raw_data'].
-        """
-        data: List[List[str]] = table_info.get("raw_data", [])
-        if 0 <= row_index < len(data):
-            row = data[row_index]
-            if 0 <= col_index < len(row):
-                return row[col_index]
-        return None
-
-    def get_cell_metadata(self, table_info: Dict[str, Any], row_index: int, col_index: int) -> Dict[str, Any]:
-        """
-        Return a metadata dict for the cell at (row_index, col_index), including:
-        - value
-        - row_index, column_index
-        - is_header_row, is_header_col
-        - row_headers (list)
-        - column_headers (list)
-        """
-        # Prefer precomputed records if present
-        cells: List[Dict[str, Any]] = table_info.get("cells", [])
-        for rec in cells:
-            if rec.get("row_index") == row_index and rec.get("column_index") == col_index:
-                return rec
-
-        # Fallback: compute on the fly from raw_data
-        data: List[List[str]] = table_info.get("raw_data", [])
-        if not data:
-            return {
-                "value": None,
-                "row_index": row_index,
-                "column_index": col_index,
-                "is_header_row": False,
-                "is_header_col": False,
-                "row_headers": [],
-                "column_headers": []
-            }
-
-        header_rows = self._identify_header_rows(data)
-        header_cols = self._identify_header_cols(data)
-        column_headers = self._extract_column_headers(data, header_rows)
-
-        value = None
-        if 0 <= row_index < len(data) and 0 <= col_index < len(data[row_index]):
-            value = data[row_index][col_index]
-
-        return {
-            "value": value,
-            "row_index": row_index,
-            "column_index": col_index,
-            "is_header_row": row_index in header_rows,
-            "is_header_col": col_index in header_cols,
-            "row_headers": self._extract_row_headers_for_cell(data, row_index, header_cols),
-            "column_headers": column_headers.get(col_index, [])
-        }
+        
